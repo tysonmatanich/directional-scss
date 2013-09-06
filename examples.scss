@@ -1,0 +1,26 @@
+﻿// Override default value for $dir in directional.scss
+$dir: rtl;
+
+// Import helpers from directional.scss
+@import "directional";
+
+// Use the helpers to make CSS for LTR or RTL
+body {
+	text-align: $left;
+	margin-#{$right}: 0;
+	background-image: url(sample-#{$dir}.png);
+	padding: dir-values(1px 2px 3px 4px);
+	overflow-x: if-ltr(visible, scroll);
+	overflow-y: if-rtl(scroll, visible);
+	font-weight: normal if-ltr(!important);
+	font-size: 1em if-rtl(!important);
+	@include if-ltr {
+		line-height: 1em;
+	}
+	@include if-rtl {
+		p {
+			line-height: 1.125em;
+			vertical-align: top;
+		}
+	}
+}
