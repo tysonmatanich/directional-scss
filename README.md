@@ -5,7 +5,7 @@ Makes supporting both left-to-right (LTR) and right-to-left (RTL) easy.
 * Author: Tyson Matanich - http://matanich.com
 * License: MIT
 
-**Article:** http://www.matanich.com/TBD/rtl-css-with-sass/
+**Article:** http://www.matanich.com/2013/09/06/rtl-css-with-sass/
 
 **Demos:**
 * RTL - http://codepen.io/tysonmatanich/pen/GnKhA
