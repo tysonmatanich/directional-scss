@@ -25,7 +25,7 @@ Makes supporting both left-to-right (LTR) and right-to-left (RTL) easy.
 * `if-rtl($if, $else)` - returns `$if` param when `$dir` equals **rtl** otherwise returns `$else` param
 * `side-values($values)` - switches the left and right values of the `$values` list when `$dir` equals **rtl**
 * `corner-values($values)` - switches the left and right values of the `$values` list when `$dir` equals **rtl**
-* 
+
 ###Mixins
 * `@include if-ltr { /*content*/ }` - returns the `@content` when `$dir` equals **ltr** otherwise returns nothing
 * `@include if-rtl { /*content*/ }` - returns the `@content` when `$dir` equals **rtl** otherwise returns nothing
