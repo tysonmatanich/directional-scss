@@ -23,7 +23,7 @@ $left: if-ltr(left, right);
 $right: if-ltr(right, left);
 
 @function side-values($values) {
-  @if $dir == rtl and length($values) == 4 {
+  @if $dir == rtl and length($values) >= 4 {
     // Reorder right and left positions in list
     @return nth($values, 1) nth($values, 4) nth($values, 3) nth($values, 2);
   }
