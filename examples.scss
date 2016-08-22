@@ -9,7 +9,7 @@ body {
 	text-align: $left;
 	margin-#{$right}: 0;
 	background-image: url(sample-#{$dir}.png);
-	padding: dir-values(1px 2px 3px 4px);
+	padding: side-values(1px 2px 3px 4px);
 	overflow-x: if-ltr(visible, scroll);
 	overflow-y: if-rtl(scroll, visible);
 	font-weight: normal if-ltr(!important);
